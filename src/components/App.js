@@ -2,6 +2,7 @@ import React from 'react';
 import Interactive from 'react-interactive';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
+import Users from './users';
 import ExampleComponent from './ExampleComponent';
 import PageNotFound from './PageNotFound';
 import Breadcrumbs from './Breadcrumbs';
@@ -24,6 +25,7 @@ export default function App() {
 
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/users" component={Users} />
         <Route path="/example" component={ExampleComponent} />
         <Route component={PageNotFound} />
       </Switch>
